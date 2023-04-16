@@ -1,0 +1,14 @@
+*arr - represents the array that needs to be sorted
+
+
+//copy array
+
+for(int i = 0; i < len1;i++){
+       first[i] = arr[k++];
+   }
+
+
+// print 
+ for(int i=0;i<n;i++){
+        cout << arr[i] << endl;
+    }
