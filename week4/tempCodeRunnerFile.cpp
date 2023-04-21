@@ -1,3 +1,1 @@
- int n;
-    cout<<"Enter n :";
-    cin>>n;
+ // n%=10;
