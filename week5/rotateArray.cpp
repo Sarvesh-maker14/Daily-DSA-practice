@@ -30,21 +30,15 @@ int main()
     v1.push_back(6);
     v1.push_back(7);
     display(v1);
-
-    //reverse using two pointer
-
-    int i =0;
-    int j = v1.size() -1;
-
-    // while(i<=j){
-    //     int temp = v1[i];
-    //     v1[i] = v1[j];
-    //     v1[j] = temp;
-    //     i++;
-    //     j--;
-    // }
-
-    reversePart(0,5,v1);
+    int k = 2;
+    
+    int n = v1.size();
+    if(k>n){
+        k=k%n;
+    }
+    reversePart(0,n-k-1,v1);
+    reversePart(n-k,n-1,v1);
+    reversePart(0,n-1,v1);
     display(v1);
 
     return 0;
