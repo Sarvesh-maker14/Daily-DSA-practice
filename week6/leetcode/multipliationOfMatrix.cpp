@@ -45,7 +45,27 @@ int main()
     }
 
     //creating a resultant matrix => m*n p*q  --> m*q
+
+    //resultant matrix
+    int res[m][q];
+    for(int i = 0;i<m;i++){
+        for(int j=0;j<q;j++){
+
+            res[i][j] = 0;
+
+            for(int k =0;k<p;k++){
+                res[i][j] = res[i][j] + a[i][k]*b[k][j];
+            }
+
+        }
+    }
     
+    for(int i = 0;i<m;i++){ // i --> row
+        for(int j=0;j<q;j++){ //j--> column
+            cout<<res[i][j]<<" ";
+        }
+        cout<<endl;
+   }
 
 
 
@@ -55,38 +75,12 @@ int main()
     }
 
 
-    int arr[m][n];
+   
 
 
-    for(int i = 0;i<m;i++){
-        for(int j=0;j<n;j++){
-            cin>>arr[i][j];
-        }
-    }
 
-     for(int i = 0;i<n;i++){ // i --> row
-        for(int j=0;j<m;j++){ //j--> column
-            cout<<arr[i][j]<<" ";
-        }
-        cout<<endl;
-   }
 
     
-    //transpose the same matrix
-    for(int i = 0;i<n;i++){
-        for(int j=i+1;j<m;j++){
-            int temp = arr[i][j];
-            arr[i][j] = arr[j][i];
-            arr[j][i] = temp;
-        }
-    }
-
-    for(int i = 0;i<n;i++){ // i --> row
-        for(int j=0;j<m;j++){ //j--> column
-            cout<<arr[i][j]<<" ";
-        }
-        cout<<endl;
-   }
 
 
 
