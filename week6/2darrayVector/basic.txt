@@ -1,0 +1,10 @@
+advantages -->
+                1.rows increase
+                2.variable columns
+                3.problem with 2D arrays is that we have to pass size of row and column when passing the 2D array to a function
+                4.this problem is resolved in 2D vector 
+                vector< vector<int> > &v // pass by reference
+
+2D vectors are vector of vectors
+
+vector< vector<int> > v(m) --> it can store "m" vectors
