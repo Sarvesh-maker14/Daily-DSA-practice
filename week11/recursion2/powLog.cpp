@@ -2,11 +2,14 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int pow(int x ,int n){
+int pow(double x ,int n){
     if(n==0 ) return 1;
     if(n==1) return x;
-    // return x*pow(x,n-1);
-    // return pow(x,n/2)*pow(x,n/2);
+     if(n<0){
+            n = -n;
+            x = 1/x;
+        }
+    
 
     int ans = pow(x,n/2);
     if(n%2==0)  return ans*ans;
@@ -20,5 +23,5 @@ int pow(int x ,int n){
 
 int main()
 {
-    cout<<pow(2,9);
+    cout<<pow(2,-2);
 }

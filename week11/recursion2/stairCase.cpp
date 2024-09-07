@@ -11,7 +11,7 @@ int stair(int n){
 }
 
 
-
+ 
 
 int main()
 {
